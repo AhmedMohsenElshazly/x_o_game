@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:x_o_game/bloc/bloc/game_logic_bloc.dart';
 import 'package:x_o_game/screens/gamescreen.dart';
 
 class MyHomePge extends StatelessWidget {
@@ -18,27 +20,32 @@ class MyHomePge extends StatelessWidget {
         ),
       ),
       body: Padding(
-        padding: const EdgeInsets.only(bottom: 100), // moves button UP
+        padding: const EdgeInsets.only(bottom: 100),
         child: Align(
           alignment: Alignment.center,
           child: ElevatedButton(
             onPressed: () {
               Navigator.push(
-      context,
-      MaterialPageRoute(builder: (context) => const GameScreen()),
-    );
+                context,
+                MaterialPageRoute(
+                  builder: (context) => BlocProvider(
+                    create: (_) => GameLogicBloc(),
+                    child: GameScreen(),
+                  ),
+                ),
+              );
             },
             style: ElevatedButton.styleFrom(
               backgroundColor: Colors.blue,
-              padding: const EdgeInsets.symmetric(
-                  horizontal: 52, vertical: 20), // makes button larger
+              padding:
+                  const EdgeInsets.symmetric(horizontal: 52, vertical: 20),
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(20),
               ),
             ),
             child: const Text(
               'Play',
-              style: TextStyle(fontSize: 24), // makes text larger
+              style: TextStyle(fontSize: 24),
             ),
           ),
         ),

@@ -20,10 +20,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       debugShowCheckedModeBanner: false,
-      home: BlocProvider(
-        create: (context) => GameLogicBloc(),
-        child: const MyHomePge(),
-      ),
+      home: const MyHomePge(),
     );
   }
 }
