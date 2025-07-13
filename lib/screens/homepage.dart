@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:x_o_game/screens/gamescreen.dart';
 
 class MyHomePge extends StatelessWidget {
