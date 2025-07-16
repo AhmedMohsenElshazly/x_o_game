@@ -30,7 +30,7 @@ class MyHomePge extends StatelessWidget {
                 MaterialPageRoute(
                   builder: (context) => BlocProvider(
                     create: (_) => GameLogicBloc(),
-                    child: GameScreen(),
+                    child: const GameScreen(),
                   ),
                 ),
               );

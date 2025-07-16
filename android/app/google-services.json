@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "213751056335",
+    "project_id": "x-o-game-16-7-2025",
+    "storage_bucket": "x-o-game-16-7-2025.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:213751056335:android:1d98b741f097211660f4ba",
+        "android_client_info": {
+          "package_name": "com.example.x_o_game"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9jRfYeC0U0MWKozsg-9eFSJ-VIHBqvIg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

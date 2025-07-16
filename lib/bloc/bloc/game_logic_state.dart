@@ -6,7 +6,7 @@ class GameState extends Equatable {
   final String currentPlayer;
   final String? winner;
 
-  GameState({
+  const GameState({
     required this.board,
     required this.currentPlayer,
     this.winner,
@@ -31,9 +31,9 @@ class GameState extends Equatable {
 }
 
 class GameLogicState extends GameState {
-  GameLogicState({required super.board, required super.currentPlayer});
+  const GameLogicState({required super.board, required super.currentPlayer});
 }
 
 class InitGameState extends GameState {
-  InitGameState({required super.board, required super.currentPlayer});
+  const InitGameState({required super.board, required super.currentPlayer});
 }
